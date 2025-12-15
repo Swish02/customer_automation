@@ -5,6 +5,13 @@ app_description = "customer_automation for sales person"
 app_email = "brsa8495@gmail.com"
 app_license = "mit"
 
+doc_events = {
+    "Customer": {
+        "after_insert": "customer_automation.customer_events.handle_customer_creation"
+    }
+}
+
+
 # Apps
 # ------------------
 

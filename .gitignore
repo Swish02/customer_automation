@@ -1,7 +1,22 @@
-.DS_Store
+# Python
+__pycache__/
 *.pyc
-*.egg-info
+*.pyo
+*.egg-info/
+
+# Frappe / Bench
+.env
+*.log
+*.sqlite
+*.sqlite3
+
+# Frontend
+node_modules/
+dist/
+build/
+
+# OS / Editor
+.DS_Store
 *.swp
 tags
-node_modules
-__pycache__
+
