@@ -7,7 +7,11 @@ app_license = "mit"
 
 doc_events = {
     "Customer": {
-        "after_insert": "customer_automation.customer_events.handle_customer_creation"
+        "after_insert": "customer_automation.customer_events.handle_customer_creation",
+        # "on_trash": "customer_automation.customer_events.handle_customer_deletion"
+    },
+    "Sales Invoice": {
+        "validate": "customer_automation.customer_events.calculate_profit_percentage"
     }
 }
 
